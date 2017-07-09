@@ -1,0 +1,37 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/" . "ghding/")
+ ("/Users/ghding/Desktop/" . "virtualenvfolder/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/ghding/Desktop/virtualenvfolder/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ 
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/ghding/.emacs.d/" (22881 30282 0 0) "var/" "snippets/" "site-lisp/" "request/" "recentf" "README.org" "pyim/" "projectile-bookmarks.eld" "network-security.data" "misc/" "localelpa/" "lisp/" "init.el" "ido.last" "history" "eshell/" "emms/" "emacs-livedown/" "elpa/" "custom-set-variables.el" "company-statistics-cache.el" "auto-save-list/" ".session" ".DS_Store" ".#init.el" "../" "./")
+
+ ("/Users/ghding/Desktop/virtualenvfolder/bin/" (22811 27983 0 0) "wheel" "tensorboard" "python3.5" "python3" "python-config" "python" "pip3.5" "pip3" "pip" "f2py" "easy_install-3.5" "easy_install" "activate_this.py" "activate.fish" "activate.csh" "activate" "../" "./")
+
+ ("/Users/ghding/Desktop/virtualenvfolder/" (22811 28155 0 0) "pip-selfcheck.json" "lib/" "include/" "bin/" ".Python" ".DS_Store" "../" "./")
+
+ ("/Users/" (22608 39403 0 0) "Shared/" "Guest/" "ghding/" ".localized" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/" (22874 27931 0 0) "OpenUxAS/" "OpenAMASE/" "LmcpGen/" ".vscode/" ".DS_Store" "../" "./")
+
+ ("/Users/ghding/Desktop/" (22879 42221 0 0) "virtualenvfolder/" "UxAS_pulls/" "Thumbs.db" "backup/" ".vscode/" ".localized" ".DS_Store" ".com.apple.timemachine.supported" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/ghding/" (22880 29948 0 0) "VirtualBox VMs/" "seaborn-data/" "PycharmProjects/" "Public/" "Pictures/" "opt/" "OneDrive - University of Colorado at Boulder Office 365/" "News/" "Music/" "Movies/" "matlab_crash_dump.7528-1" "matlab_crash_dump.732-1" "matlab_crash_dump.5134-1" "matlab_crash_dump.3265-1" "matlab_crash_dump.17914-1" "matlab_crash_dump.1136-1" "matlab_crash_dump.1132-1" "Library/" "gudi3894/" "Google Drive/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Applications/" "AndroidStudioProjects/" ".yd/" ".vscode/" ".viminfo" ".Trash/" ".templateengine/" ".swp" ".subversion/" ".ssh/" ".spyder2/" ".smex-items" ".sh_history" ".ServiceHub/" ".s3cfg" ".python_history" ".python27_compiled/" ".pylint.d/" ".PyCharm50/" ".profile-anaconda.bak" ".profile" ".plotly/" ".p2/" ".ovftool.ssldb" ".oracle_jre_usage/" ".octave_hist" ".newsrc-dribble" ".mysql_history" ".mime.types" ".matplotlib/" ".matlab/" ".mailcap" ".macports/" ".local/" ".kodi/" ".jupyter/" ".ipython/" ".idlerc/" ".IdentityService/" ".gradle/" ".gnuplot_history" ".gitconfig" ".ET_TVP/" ".ET_TVC/" ".emacs~" ".emacs.keyfreq" ".emacs.d/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".continuum/" ".config/" ".conda/" ".cim_install_log" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".backups/" ".anyconnect" ".android/" ".anaconda/" ".498731.padl" ".498194.padl" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,3 @@
+(1
+(js2-mode . [(100000003) ((emacs (24 1)) (cl-lib (0 5))) "Improved JavaScript editing mode" tar])
+)
