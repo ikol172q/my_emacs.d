@@ -9,6 +9,8 @@
 ;; Inherited from the source: https://github.com/redguardtoo/emacs.d
 ;; Author: ikol172q
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(global-visual-line-mode 1) ; 1 for on, 0 for off
+
 (package-initialize)
 
 (defvar best-gc-cons-threshold 4000000 "Best default gc threshold value. Should't be too big.")
@@ -190,7 +192,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Basic appearance
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(when window-system (set-frame-size (selected-frame) 160 48)) ;; Resize the window
+(when window-system (set-frame-size (selected-frame) 121 48)) ;; Resize the window
 (tool-bar-mode nil)
 (menu-bar-mode nil)
 (toggle-scroll-bar nil)
@@ -234,7 +236,7 @@
 (setq speedbar-use-images nil) ;; use text for buttons
 (setq sr-speedbar-right-side nil) ;; put on left side
 (setq sr-speedbar-auto-refresh nil) ;; turn on auto-refresh
-(setq sr-speedbar-width 30)
+(setq sr-speedbar-width 33)
 
 (add-hook 'emacs-startup-hook (lambda ()
 (sr-speedbar-open)
@@ -341,6 +343,10 @@
 (setq-default cursor-type 'bar) ; change the cursor shape
 (set-cursor-color "#ffffff") ; change the cursor color
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;(add-hook 'text-mode-hook 'turn-on-visual-line-mode)
 
 
 ;;------------------------------------------------------------
