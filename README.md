@@ -10,8 +10,7 @@ changed something and add some additional packages to it.
 ## Emacs version
 
 It seems that Mac has install one inner Emacs. It has the version info as follows:
->GNU Emacs 22.1.1
-
+>GNU Emacs 22.1.1\\
 >Copyright (C) 2007 Free Software Foundation, Inc.
 
 >GNU Emacs comes with ABSOLUTELY NO WARRANTY.
