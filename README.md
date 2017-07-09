@@ -6,8 +6,11 @@ from [binchen](https://github.com/redguardtoo/emacs.d)'s configuration. I've
 changed something and add some additional packages to it.
 
 **Note:** How to update files and folders remotely. [Here is one useful introduction to do it](https://stackoverflow.com/questions/8775850/how-do-i-add-files-and-folders-into-github-repos). 
-* For the newest repository, we should download it or **clone** it correctly. For example, we might see the error like: *fatal: Not a git repository (or any of the parent directories): .git*. Remermber to do **git init** in the repository so that you may see *fatal: You are on a branch yet to be born*.
-* 
+* For the newest repository, we should download it or **clone** it correctly. For example, we might see the error like: *fatal: Not a git repository (or any of the parent directories): .git*. Remermber to do **git init** in the repository. (you may see *fatal: You are on a branch yet to be born*, but it doesn't matter)
+* Synchronize repository
+  * Adding files or folders: You can use **git add <folder>/\*** or **git add <file>**. If you have multiple files to add, you can use **git add ***
+  * Running **git status** to check the info of the current repository
+  * 
 
 ## Emacs version
 
@@ -23,5 +26,5 @@ For more information about these matters, see the file named COPYING.
 
 Using **M-x emacs-version** to check the installed Emacs which gives the info as follows:
 ```
-*GNU Emacs 25.2.1 (x86_64-apple-darwin13.4.0, NS appkit-1265.21 Version 10.9.5 (Build 13F1911)) of 2017-04-21*
+GNU Emacs 25.2.1 (x86_64-apple-darwin13.4.0, NS appkit-1265.21 Version 10.9.5 (Build 13F1911)) of 2017-04-21
 ```
