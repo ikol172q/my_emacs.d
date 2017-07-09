@@ -11,10 +11,15 @@ changed something and add some additional packages to it.
 
 It seems that Mac has install one inner Emacs. It has the version info as follows:
 >GNU Emacs 22.1.1
+
 >Copyright (C) 2007 Free Software Foundation, Inc.
+
 >GNU Emacs comes with ABSOLUTELY NO WARRANTY.
+
 >You may redistribute copies of Emacs
+
 >under the terms of the GNU General Public License.
+
 >For more information about these matters, see the file named COPYING.
 
 Using **M-x emacs-version** to check the installed Emacs which gives the info as follows:
