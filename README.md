@@ -23,8 +23,10 @@ GNU Emacs 25.2.1 (x86_64-apple-darwin13.4.0, NS appkit-1265.21 Version 10.9.5 (B
 ```
 
 ## Added packages
-1. ipyhton
-2. speedbar
+* ipyhton
+* markdown-model
+* speedbar
+* magit
 
 **Note:** How to update files and folders remotely. [Here is one useful introduction to do it](https://stackoverflow.com/questions/8775850/how-do-i-add-files-and-folders-into-github-repos). 
 * For the newest repository, we should download it or **clone** it correctly. For example, we might see the error like: *fatal: Not a git repository (or any of the parent directories): .git*. Remermber to do **git init** in the repository. (you may see *fatal: You are on a branch yet to be born*, but it doesn't matter)
