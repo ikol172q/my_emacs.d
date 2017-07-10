@@ -192,7 +192,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Basic appearance
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(when window-system (set-frame-size (selected-frame) 121 48)) ;; Resize the window
+(when window-system (set-frame-size (selected-frame) 160 48)) ;; Resize the window
 (tool-bar-mode nil)
 (menu-bar-mode nil)
 (toggle-scroll-bar nil)
@@ -342,6 +342,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (setq-default cursor-type 'bar) ; change the cursor shape
 (set-cursor-color "#ffffff") ; change the cursor color
+(setq mouse-wheel-scroll-amount '(2 ((shift) . 1) ((control) . nil)))
+(setq mouse-wheel-progressive-speed nil) ; forbid speedup
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
