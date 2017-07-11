@@ -9,7 +9,11 @@
 ;; Inherited from the source: https://github.com/redguardtoo/emacs.d
 ;; Author: ikol172q
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(global-visual-line-mode 1) ; 1 for on, 0 for off
+;;(global-visual-line-mode 1) ; 1 for on, 0 for off
+;;(visual-line-mode t)
+;;(setq-default word-wrap t)
+;;(setq longlines-wrap-follows-window-size t)
+;;(global-set-key [(control meta l)] 'longlines-mode)
 
 (package-initialize)
 
@@ -118,7 +122,8 @@
   (require 'init-term-mode)
   (require 'init-web-mode)
   (require 'init-slime)
-  (require 'init-company)
+  ;;(require 'init-company)
+  (require 'company)
   (require 'init-chinese-pyim) ;; cannot be idle-required
   ;; need statistics of keyfreq asap
   (require 'init-keyfreq)
@@ -134,6 +139,12 @@
   ;;(require 'rainbow-mode)
   (require 'ein)
   (require 'auto-complete)
+  (require 'ggtags)
+  (require 'clang-format)
+  (require 'rtags)
+  (require 'cmake-ide)
+  (require 'flycheck-rtags)
+  (require 'irony)
   (require 'cc-mode)
   ;;(require 'livedown)
   ;;(require 'dash)
@@ -266,7 +277,7 @@
 ;;(autoload 'ansi-color-for-comint-mode-on "ansi-color" nil t)
 ;;(add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
-(setq ein:use-auto-complete t)
+;;(setq ein:use-auto-complete t)
 ;; Or, to enable "superpack" (a little bit hacky improvements):
 ;; (setq ein:use-auto-complete-superpack t)
 
@@ -360,9 +371,72 @@
 (show-paren-mode 1);;highlight matching paranthesis
 (setq show-paren-style 'expression) ; highlight entire bracket expression
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Rtags, irony and company setting
+;; Resource: http://syamajala.github.io/c-ide.html
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(add-hook 'after-init-hook 'global-company-mode)
+
+(setq rtags-completions-enabled t)
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends 'company-rtags))
+(setq rtags-autostart-diagnostics t)
+(rtags-enable-standard-keybindings)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Source code completion using Irony
+(add-hook 'c++-mode-hook 'irony-mode)
+(add-hook 'c-mode-hook 'irony-mode)
+(add-hook 'objc-mode-hook 'irony-mode)
+
+(defun my-irony-mode-hook ()
+  (define-key irony-mode-map [remap completion-at-point]
+    'irony-completion-at-point-async)
+  (define-key irony-mode-map [remap complete-symbol]
+    'irony-completion-at-point-async))
+
+(add-hook 'irony-mode-hook 'my-irony-mode-hook)
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 
 
+(add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
+(setq company-backends (delete 'company-semantic company-backends))
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends 'company-irony))
 
+(setq company-idle-delay 0)
+(define-key c-mode-map [(tab)] 'company-complete)
+(define-key c++-mode-map [(tab)] 'company-complete)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Header file completion with 
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends 'company-irony))
+
+(require 'company-irony-c-headers)
+(eval-after-load 'company
+  '(add-to-list
+    'company-backends '(company-irony-c-headers company-irony)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Syntax check
+(require 'flycheck-rtags)
+(add-hook 'c++-mode-hook 'flycheck-mode)
+(add-hook 'c-mode-hook 'flycheck-mode)
+
+(defun my-flycheck-rtags-setup ()
+  (flycheck-select-checker 'rtags)
+  (setq-local flycheck-highlighting-mode nil) ;; RTags creates more accurate overlays.
+  (setq-local flycheck-check-syntax-automatically nil))
+;; c-mode-common-hook is also called by c++-mode
+(add-hook 'c-mode-common-hook #'my-flycheck-rtags-setup)
+
+(eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 ;;------------------------------------------------------------
 ;; * 
 ;;------------------------------------------------------------

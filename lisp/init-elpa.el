@@ -76,7 +76,7 @@ But you may use safer HTTPS instead.")
         ;; ("org" . "http://orgmode.org/elpa/") ; latest org-mode
  ;;("localelpa" . "~/.emacs.d/localelpa/")
  ;;("my-js2-mode" . "https://raw.githubusercontent.com/redguardtoo/js2-mode/release/")
-        ("melpa" . "https://melpa.org/packages/")
+        ;;("melpa" . "https://melpa.org/packages/")
  		("melpa-newest" . "http://melpa.milkbox.net/packages/")
         ;;("melpa-stable" . "https://stable.melpa.org/packages/")
         ))

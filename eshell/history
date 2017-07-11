@@ -44,3 +44,29 @@ jupyter notebook
 ls
 clear
 
+cd OneDrive\ -\ University\ of\ Colorado\ at\ Boulder\ Office\ 365/
+ls
+ls
+jupyter notebook
+ls
+Music          ls        matlab_crash_dump.1136-1                                 
+ls
+ls
+ls
+jupyter notebook
+git clone https://github.com/lisa-lab/DeepLearningTutorials.git
+ls
+rm DeepLearningTutorials/
+rm -f DeepLearningTutorials/
+rm -rf DeepLearningTutorials/
+ls
+git clone https://github.com/ikol172q/DeepLearningTutorials.git
+cd DeepLearningTutorials/
+l
+ls
+cd data/
+ls
+./download.sh 
+ls
+ls
+ls

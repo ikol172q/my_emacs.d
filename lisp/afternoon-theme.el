@@ -48,8 +48,8 @@
 
        (background (if 256color "#1c1c1c" "#181a26"))
        (current-line (if 256color "#121212" "#14151E"))
-       (block-background (if 256color "#262626" "#1F2232"))
-       (selection "#103050")
+       (block-background (if 256color "#262626" "#484d68"))
+       (selection "#7f94a8")
        (foreground "#eaeaea")
        (comment "#969896")
        (red "#d54e53")
@@ -58,6 +58,7 @@
        (green "DarkOliveGreen3")
        (aqua "#70c0b1")
        (blue "DeepSkyBlue1")
+       ;;(blue "#2c94f4")
        (purple "#c397d8"))
 
   (custom-theme-set-faces
@@ -80,7 +81,8 @@
    `(font-lock-regexp-grouping-backslash ((,class (:foreground ,yellow))))
    `(font-lock-regexp-grouping-construct ((,class (:foreground ,purple))))
    `(font-lock-string-face ((,class (:foreground "burlywood"))))
-   `(font-lock-type-face ((,class (:foreground "CadetBlue1"))))
+   ;;`(font-lock-type-face ((,class (:foreground "CadetBlue1"))))
+   `(font-lock-type-face ((,class (:foreground "DodgerBlue2"))))
    `(font-lock-variable-name-face ((,class (:foreground ,yellow))))
    `(font-lock-warning-face ((,class (:weight bold :foreground ,red))))
    `(shadow ((,class (:foreground ,comment))))
@@ -194,7 +196,8 @@
    `(whitespace-hspace ((,class (:background nil :foreground ,selection))))
 
    ;; Parenthesis matching (built-in)
-   `(show-paren-match-face ((,class (:background "dodgerblue1" :foreground "white"))))
+   ;;`(show-paren-match-face ((,class (:background "dodgerblue1" :foreground "white"))))
+   `(show-paren-match-face ((,class (:background "#295150" :foreground "white"))))
    `(show-paren-mismatch-face ((,class (:background "red1" :foreground "white"))))
 
    ;; Smartparens paren matching

@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenAMASE/" . "OpenAMASE/")
  ("/Users/" . "ghding/")
  ("/Users/ghding/Desktop/" . "virtualenvfolder/")
 )
@@ -18,7 +19,23 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/Users/ghding/.emacs.d/" (22881 30282 0 0) "var/" "snippets/" "site-lisp/" "request/" "recentf" "README.org" "pyim/" "projectile-bookmarks.eld" "network-security.data" "misc/" "localelpa/" "lisp/" "init.el" "ido.last" "history" "eshell/" "emms/" "emacs-livedown/" "elpa/" "custom-set-variables.el" "company-statistics-cache.el" "auto-save-list/" ".session" ".DS_Store" ".#init.el" "../" "./")
+ ("/Users/ghding/" (22883 61312 0 0) "VirtualBox VMs/" "Untitled.ipynb" "seaborn-data/" "PycharmProjects/" "Public/" "Pictures/" "opt/" "OneDrive - University of Colorado at Boulder Office 365/" "News/" "newconfig/" "my_emacs.d/" "Music/" "Movies/" "matlab_crash_dump.7528-1" "matlab_crash_dump.732-1" "matlab_crash_dump.5134-1" "matlab_crash_dump.3265-1" "matlab_crash_dump.17914-1" "matlab_crash_dump.1136-1" "matlab_crash_dump.1132-1" "Library/" "gudi3894/" "Google Drive/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Applications/" "AndroidStudioProjects/" ".yd/" ".vscode/" ".viminfo" ".Trash/" ".templateengine/" ".swp" ".subversion/" ".ssh/" ".spyder2/" ".smex-items" ".sh_history" ".ServiceHub/" ".s3cfg" ".python_history" ".python27_compiled/" ".pylint.d/" ".PyCharm50/" ".profile-anaconda.bak" ".profile" ".plotly/" ".p2/" ".ovftool.ssldb" ".oracle_jre_usage/" ".octave_hist" ".newsrc-dribble" ".mysql_history" ".mime.types" ".matplotlib/" ".matlab/" ".mailcap" ".macports/" ".local/" ".kodi/" ".jupyter/" ".ipython/" ".ipynb_checkpoints/" ".idlerc/" ".IdentityService/" ".gradle/" ".gnuplot_history" ".gitconfig" ".gem/" ".ET_TVP/" ".ET_TVC/" ".emacs~" ".emacs.keyfreq" ".emacs.d/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".continuum/" ".config/" ".conda/" ".cim_install_log" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".backups/" ".anyconnect" ".android/" ".anaconda/" ".498731.padl" ".498194.padl" "../" "./")
+
+ ("/Users/ghding/Desktop/" (22883 52466 0 0) "virtualenvfolder/" "UxAS_pulls/" "Thumbs.db" "test.md" "backup/" ".vscode/" ".localized" ".DS_Store" ".com.apple.timemachine.supported" "$RECYCLE.BIN/" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenAMASE/OpenAMASE/" (22873 35960 0 0) "src/" "run/" "Readme.html" "nbproject/" "native/" "manifest.mf" "lib/" "example scenarios/" "docs/" "dist/" "data/" "config/" "buildinfo.xml" "BuildDistribution.bat" "build.xml" "build/" "AmaseQuickstart.pdf" ".DS_Store" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenAMASE/" (22873 33794 0 0) "README.md" "OpenAMASE/" "LICENSE.md" "AMASE Tutorial.pptx" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenUxAS/" (22883 60301 0 0) "tests/" "src/" "RunLmcpGen.sh" "rm-external" "resources/" "README.md" "prepare" "meson_options.txt" "meson.build" "mdms/" "LICENSE.md" "jre-XXXXX-macosx-x64.dmg" "install_most_deps.sh" "get_dlvsco_wd_b_f.sh" "get-pip.py" "examples/" "doc/" "checkout_plus_config.sh" "build_documentation.sh" "build_debug/" "build/" "3rd/" ".travis.yml" ".gitignore" ".git/" ".DS_Store" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenUxAS/src/" (22873 43424 0 0) "VisilibityLib/" "UxAS_Main.cpp" "Utilities/" "Tasks/" "Services/" "Plans/" "LMCP/" "Includes/" "DPSS/" "Communications/" ".DS_Store" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenUxAS/src/Services/" (22883 60302 0 0) "WaypointPlanManagerService.h" "WaypointPlanManagerService.cpp" "Test_SimulationTime.h" "Test_SimulationTime.cpp" "TcpBridge.h" "TcpBridge.cpp" "ServiceManager.h" "ServiceManager.cpp" "ServiceBase.h" "ServiceBase.cpp" "SerialAutomationRequestTestService.h" "SerialAutomationRequestTestService.cpp" "SensorManagerService.h" "SensorManagerService.cpp" "SendMessagesService.h" "SendMessagesService.cpp" "RoutePlannerVisibilityService.h" "RoutePlannerVisibilityService.cpp" "RoutePlannerService.h" "RoutePlannerService.cpp" "RouteAggregatorService.h" "RouteAggregatorService.cpp" "PlanBuilderService.h" "PlanBuilderService.cpp" "OsmPlannerService.h" "OsmPlannerService.cpp" "OperatingRegionStateService.h" "OperatingRegionStateService.cpp" "MessageLoggerDataService.h" "MessageLoggerDataService.cpp" "meson.build" "BatchSummaryService.h" "BatchSummaryService.cpp" "AutonomyMonitors/" "AutomationRequestValidatorService.h" "AutomationRequestValidatorService.cpp" "AutomationDiagramDataService.h" "AutomationDiagramDataService.cpp" "AssignmentTreeBranchBoundService.h" "AssignmentTreeBranchBoundService.cpp" "AssignmentTreeBranchBoundBase.h" "AssignmentTreeBranchBoundBase.cpp" "AdapterServiceHelper.h" "01_HelloWorld.h" "01_HelloWorld.cpp" "00_ServiceTemplate.h" "00_ServiceTemplate.cpp" "00_ServiceList.h" ".DS_Store" "../" "./")
+
+ ("/Users/ghding/Desktop/UxAS_pulls/OpenUxAS/src/Services/AutonomyMonitors/" (22883 60959 0 0) "VehicleStateListenerService.h" "VehicleStateListenerService.cpp" "MonitorDB.h" "MonitorBase.h" "MonitorBase.cpp" "KeepOutZoneMonitor.h" "KeepOutZoneMonitor.cpp" "AutonomyMonitorServiceMain.h" "AutonomyMonitorServiceMain.cpp" "../" "./")
+
+ ("/Users/ghding/.emacs.d/" (22882 47165 0 0) "var/" "snippets/" "site-lisp/" "request/" "recentf" "README.org" "README.md" "pyim/" "projectile-bookmarks.eld" "network-security.data" "misc/" "localelpa/" "lisp/" "init.el" "ido.last" "history" "eshell/" "emms/" "emacs-livedown/" "elpa/" "custom-set-variables.el" "company-statistics-cache.el" "auto-save-list/" ".session" ".DS_Store" "../" "./")
 
  ("/Users/ghding/Desktop/virtualenvfolder/bin/" (22811 27983 0 0) "wheel" "tensorboard" "python3.5" "python3" "python-config" "python" "pip3.5" "pip3" "pip" "f2py" "easy_install-3.5" "easy_install" "activate_this.py" "activate.fish" "activate.csh" "activate" "../" "./")
 
@@ -27,10 +44,6 @@
  ("/Users/" (22608 39403 0 0) "Shared/" "Guest/" "ghding/" ".localized" "../" "./")
 
  ("/Users/ghding/Desktop/UxAS_pulls/" (22874 27931 0 0) "OpenUxAS/" "OpenAMASE/" "LmcpGen/" ".vscode/" ".DS_Store" "../" "./")
-
- ("/Users/ghding/Desktop/" (22879 42221 0 0) "virtualenvfolder/" "UxAS_pulls/" "Thumbs.db" "backup/" ".vscode/" ".localized" ".DS_Store" ".com.apple.timemachine.supported" "$RECYCLE.BIN/" "../" "./")
-
- ("/Users/ghding/" (22880 29948 0 0) "VirtualBox VMs/" "seaborn-data/" "PycharmProjects/" "Public/" "Pictures/" "opt/" "OneDrive - University of Colorado at Boulder Office 365/" "News/" "Music/" "Movies/" "matlab_crash_dump.7528-1" "matlab_crash_dump.732-1" "matlab_crash_dump.5134-1" "matlab_crash_dump.3265-1" "matlab_crash_dump.17914-1" "matlab_crash_dump.1136-1" "matlab_crash_dump.1132-1" "Library/" "gudi3894/" "Google Drive/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Applications/" "AndroidStudioProjects/" ".yd/" ".vscode/" ".viminfo" ".Trash/" ".templateengine/" ".swp" ".subversion/" ".ssh/" ".spyder2/" ".smex-items" ".sh_history" ".ServiceHub/" ".s3cfg" ".python_history" ".python27_compiled/" ".pylint.d/" ".PyCharm50/" ".profile-anaconda.bak" ".profile" ".plotly/" ".p2/" ".ovftool.ssldb" ".oracle_jre_usage/" ".octave_hist" ".newsrc-dribble" ".mysql_history" ".mime.types" ".matplotlib/" ".matlab/" ".mailcap" ".macports/" ".local/" ".kodi/" ".jupyter/" ".ipython/" ".idlerc/" ".IdentityService/" ".gradle/" ".gnuplot_history" ".gitconfig" ".ET_TVP/" ".ET_TVC/" ".emacs~" ".emacs.keyfreq" ".emacs.d/" ".eclipse/" ".DS_Store" ".dropbox/" ".cups/" ".continuum/" ".config/" ".conda/" ".cim_install_log" ".CFUserTextEncoding" ".cache/" ".bashrc" ".bash_sessions/" ".bash_profile" ".bash_history" ".backups/" ".anyconnect" ".android/" ".anaconda/" ".498731.padl" ".498194.padl" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

@@ -36,9 +36,23 @@ Fallback theme is used only if the console does NOT support 256 colors."
 
 ;; the color theme name "molokai" could be replaced with other theme 
 ;; useful resource: https://emacsthemes.com/
+;;(require 'xemacs-theme)
+;;(require 'weyland-yutani-theme)
+;;(require 'subdued-theme)
+;;(require 'reykjavik-theme)
+;;(require 'ld-dark-theme)
+;;(require 'ramangalahy-theme)
+;;(require 'mustard-theme)
+;;(require 'rippedcasts-theme)
+
+;;(require 'erosiond-theme)
+;;(require 'blackboard-theme)
+;;(require 'yoshi-theme)
+;;(require 'railscasts-theme)
+;;(require 'gray30-theme)
+;;(require 'anti-zenburn-theme)
 (require 'afternoon-theme)
 ;;(require 'sourcerer-theme)
 ;;(require 'rebecca-theme)
-;;(require 'toxi-theme)
 (provide 'init-color-theme)
 
