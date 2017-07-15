@@ -408,8 +408,11 @@
     'company-backends 'company-irony))
 
 (setq company-idle-delay 0)
-(define-key c-mode-map [(tab)] 'company-complete)
-(define-key c++-mode-map [(tab)] 'company-complete)
+;;(define-key c-mode-map [(tab)] 'company-complete)
+;;(define-key c++-mode-map [(tab)] 'company-complete)
+;;(define-key c-mode-map (kbd "<C->") 'company-complete)
+;;(define-key c++-mode-map (kbd "<C-tab>") 'company-complete)
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Header file completion with 
@@ -437,6 +440,14 @@
 
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+
+
+(require 'xcscope)
+(setq cscope-do-not-update-database t)
+
+(global-set-key '[(s-mouse-1)] semantic-ia-fast-mouse-jump)
+
+(load-file "~/cedet-1.0pre6/common/cedet.el")
 ;;------------------------------------------------------------
 ;; * 
 ;;------------------------------------------------------------
