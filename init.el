@@ -9,11 +9,7 @@
 ;; Inherited from the source: https://github.com/redguardtoo/emacs.d
 ;; Author: ikol172q
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;(global-visual-line-mode 1) ; 1 for on, 0 for off
-;;(visual-line-mode t)
-;;(setq-default word-wrap t)
-;;(setq longlines-wrap-follows-window-size t)
-;;(global-set-key [(control meta l)] 'longlines-mode)
+;;(global-visual-line-mode t) ; 1 for on, 0 for off
 
 (package-initialize)
 
@@ -130,11 +126,11 @@
   (require 'fill-column-indicator)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;;---------------------------Additional packages------------------------------
-  (require 'init-httpd)
+  ;;(require 'init-httpd)
   ;;(require 'init-evil)
   ;;(require 'speedbar-extension)
-  (require 'dired+)
-  (require 'ansi-color)
+  ;;(require 'dired+)
+  ;;(require 'ansi-color)
   ;;(require 'init-color-theme)
   ;;(require 'rainbow-mode)
   (require 'ein)
@@ -145,13 +141,13 @@
   (require 'cmake-ide)
   (require 'flycheck-rtags)
   (require 'irony)
-  (require 'cc-mode)
+  ;;(require 'cc-mode)
   ;;(require 'livedown)
   ;;(require 'dash)
   ;;(require 's)
   ;;(require 'f)
-  (require 'ob-ipython)
-  ;;(require 'visual-fill-column)
+  ;;(require 'ob-ipython)
+  (require 'visual-fill-column)
 
   ;; projectile costs 7% startup time
 
@@ -220,19 +216,19 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; resource: http://codingpy.com/article/emacs-the-best-python-editor/
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defvar myPackages
-  '(better-defaults
-    ein
-    elpy
-    flycheck
-    material-theme
-    py-autopep8))
+;;(defvar myPackages
+;;  '(better-defaults
+;;    ein
+;;    elpy
+;;    flycheck
+;;    material-theme
+;;    py-autopep8))
 
 ;; PYTHON CONFIGURATION
 ;; --------------------------------------
 ;; https://tkf.github.io/emacs-ipython-notebook/
-(elpy-enable)
-(elpy-use-ipython)
+;;(elpy-enable)
+;;(elpy-use-ipython)
 
 ;; use flycheck not flymake with elpy
 (when (require 'flycheck nil t)
@@ -246,8 +242,6 @@
 (require 'helm-config)
 (helm-mode 1)
 
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; sppedbar setting
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -255,13 +249,12 @@
 (setq speedbar-show-unknown-files t) ;; show all files
 (setq speedbar-use-images nil) ;; use text for buttons
 (setq sr-speedbar-right-side nil) ;; put on left side
-(setq sr-speedbar-auto-refresh nil) ;; turn on auto-refresh
+(setq sr-speedbar-auto-refresh t) ;; turn on auto-refresh
 (setq sr-speedbar-width 33)
 
 (add-hook 'emacs-startup-hook (lambda ()
 (sr-speedbar-open)
 ))
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Projectile setting
@@ -284,23 +277,23 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Livedown setting: https://github.com/shime/emacs-livedown
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(custom-set-variables
-'(livedown-autostart nil) ; automatically open preview when opening markdown files
-'(livedown-open t)        ; automatically open the browser window
-'(livedown-port 1337)     ; port for livedown server
-'(livedown-browser nil))  ; browser to use
+;;(custom-set-variables
+;;'(livedown-autostart nil) ; automatically open preview when opening markdown files
+;;'(livedown-open t)        ; automatically open the browser window
+;;'(livedown-port 1337)     ; port for livedown server
+;;'(livedown-browser nil))  ; browser to use
 
-(setq py-split-windows-on-execute-p t)
+;;(setq py-split-windows-on-execute-p t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Org-Babel for ipython
 ;; source: https://github.com/gregsexton/ob-ipython
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(org-babel-do-load-languages
- 'org-babel-load-languages
- '((ipython . t)
-   ;; other languages..
-))
+;;(org-babel-do-load-languages
+;; 'org-babel-load-languages
+;; '((ipython . t)
+;;   ;; other languages..
+;;))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Tabbar model setting
@@ -441,13 +434,14 @@
 (eval-after-load 'flycheck
   '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;  setting
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(visual-line-mode t)
+(setq-default word-wrap t)
+(setq longlines-wrap-follows-window-size t)
+(global-set-key [(control meta l)] 'longlines-mode)
 
-(require 'xcscope)
-(setq cscope-do-not-update-database t)
-
-(global-set-key '[(s-mouse-1)] semantic-ia-fast-mouse-jump)
-
-(load-file "~/cedet-1.0pre6/common/cedet.el")
 ;;------------------------------------------------------------
 ;; * 
 ;;------------------------------------------------------------
