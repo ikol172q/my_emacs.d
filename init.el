@@ -200,7 +200,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Basic appearance
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(when window-system (set-frame-size (selected-frame) 160 48)) ;; Resize the window
+(when window-system (set-frame-size (selected-frame) 176 48)) ;; Resize the window
 (tool-bar-mode nil)
 (menu-bar-mode nil)
 (toggle-scroll-bar nil)
@@ -249,7 +249,7 @@
 (setq speedbar-show-unknown-files t) ;; show all files
 (setq speedbar-use-images nil) ;; use text for buttons
 (setq sr-speedbar-right-side nil) ;; put on left side
-(setq sr-speedbar-auto-refresh t) ;; turn on auto-refresh
+(setq sr-speedbar-auto-refresh nil) ;; turn on auto-refresh
 (setq sr-speedbar-width 33)
 
 (add-hook 'emacs-startup-hook (lambda ()
