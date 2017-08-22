@@ -23,3 +23,6 @@ Using **M-x emacs-version** to check the installed Emacs which gives the info as
 ```
 *GNU Emacs 25.2.1 (x86_64-apple-darwin13.4.0, NS appkit-1265.21 Version 10.9.5 (Build 13F1911)) of 2017-04-21*
 ```
+## Error checlist
+* error: Package ‘async-’ is unavailable A: It means that the Emacs can not download EPLA packages. redguardtoo gives the answer to solve it. Using M-x package-refresh-content to refresh and restart the Emacs.
+* error: Could not create connection to stable.melpa.org:443 This is because the connection of the internet has something wrong. It has one solution to add (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages") in the /lisp/init-elpa.el. But it seems that it can be ignored.
